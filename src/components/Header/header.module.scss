@@ -1,0 +1,21 @@
+.headerBig {
+  background-color: #3a3a3a;
+  height: 115px;
+  width: 100%;
+  display: table;
+  position: fixed;
+  z-index: 1;
+}
+
+.headerSmall {
+  background-color: darkgrey;
+  height: 70px;
+  width: 100%;
+  display: table;
+  position: fixed;
+  z-index: 1;
+}
+.sticky-wrapper {
+  position: relative;
+  height: 3rem; /* We need to change this value */
+}

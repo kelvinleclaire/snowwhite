@@ -1,0 +1,29 @@
+.content {
+  width: 100%;
+  display: block;
+  block-size: auto;
+  //   min-height: 707px;
+  min-height: calc(100vh - 230px);
+  background-color: black;
+  background-size: cover;
+}
+
+.contentColumnLeft {
+  display: table-cell;
+  padding-left: 5%;
+  width: 60%;
+  background-color: rgb(35, 59, 78);
+}
+
+.contentColumnRight {
+  display: table-cell;
+  margin-right: 5%;
+  // background-image: url(../../assets/profile.png);
+  background-position: right;
+  background-size: contain;
+  background-repeat: no-repeat;
+  //filter: blur(1px);
+  opacity: 0.4;
+  // height: 500px;
+  background-color: rgb(35, 59, 78);
+}
