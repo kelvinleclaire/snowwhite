@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from 'react';
-import { isPropertySignature } from 'typescript';
+
 import ImageViewer from './Image/image';
 import TextViewer from './Text/text';
 import Video from './Video/video';
@@ -21,7 +21,7 @@ const Content: React.FC<IContentProps> = (props: IContentProps) => {
         return () => {
             window.removeEventListener('scroll', () => handleScroll);
         };
-    }, []);
+    });
 
     return (
         <div ref={ref}>

@@ -1,11 +1,6 @@
 import * as React from 'react';
-import { useState } from 'react';
 import { slide as Menu } from 'react-burger-menu'
-import { Link } from 'react-router-dom';
-import { Collapse, Jumbotron, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink } from 'reactstrap';
-import { isPropertySignature } from 'typescript';
 import StickyHeader from '../Header/header';
-
 import styles from './navmenu.module.scss';
 
 var menustyles = {
@@ -56,9 +51,6 @@ var menustyles = {
   },
 }
 
-interface INavMenuState {
-  isOpen: boolean;
-}
 
 interface INavMenuProps {
   isBig: boolean;

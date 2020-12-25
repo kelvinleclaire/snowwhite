@@ -1,5 +1,5 @@
-import React, { useEffect, useRef, useState } from 'react';
-import { isBigIntLiteral } from 'typescript';
+import React from 'react';
+
 import styles from './header.module.scss';
 
 interface IHeaderProps {
