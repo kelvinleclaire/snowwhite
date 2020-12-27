@@ -11,7 +11,6 @@
 }
 
 .logo {
-  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   margin-bottom: 0;
   max-height: 100%;
@@ -19,7 +18,6 @@
   float: none;
   vertical-align: middle;
   transform: translateZ(0);
-  -webkit-transform: translateZ(0);
 }
 .shrink {
   max-height: 60%;

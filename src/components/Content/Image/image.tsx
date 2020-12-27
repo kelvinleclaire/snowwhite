@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './image.module.scss';
 
 interface IImageProps {
     imageName: string;
@@ -6,7 +7,9 @@ interface IImageProps {
 
 const ImageViewer: React.FC<IImageProps> = (props: IImageProps) => {
     return (
-        <img src={props.imageName} alt='Bild'></img>
+        <div>
+            <img src={props.imageName} alt='Bild' className={styles.imgStyle}></img>
+        </div>
     );
 };
 
