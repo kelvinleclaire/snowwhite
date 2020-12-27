@@ -10,7 +10,7 @@ interface IHeaderProps {
 
 const StickyHeader: React.FC<IHeaderProps> = (props: IHeaderProps) => {
 
-    let className = props.isBig ? styles.headerBig : styles.headerSmall;
+    let className = props.isBig ? styles.headerBig : `${styles.headerBig} ${styles.shrink}`;
     return (
         <header className={className}>
             {props.children}

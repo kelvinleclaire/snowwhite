@@ -17,10 +17,10 @@ interface IVideoProps {
 }
 
 const Video: React.FC<IVideoProps> = (props: IVideoProps) => {
-    const [playerState, setplayerState] = useState<boolean>(false);
-    useEffect(() => {
-        setplayerState(true);
-    }, []);
+    // const [playerState, setplayerState] = useState<boolean>(false);
+    // useEffect(() => {
+    //     setplayerState(true);
+    // }, []);
 
     return (
         <div>
@@ -30,7 +30,7 @@ const Video: React.FC<IVideoProps> = (props: IVideoProps) => {
                 controls={props.controls}
                 loop={props.loop}
                 muted={props.muted}
-                onReady={() => setplayerState(true)}
+                // onReady={() => setplayerState(true)}
                 width='100%'
                 height='100%'
 

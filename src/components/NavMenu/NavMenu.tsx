@@ -2,54 +2,8 @@ import * as React from 'react';
 import { slide as Menu } from 'react-burger-menu'
 import StickyHeader from '../Header/header';
 import styles from './navmenu.module.scss';
+import './menuStyles.css';
 
-var menustyles = {
-  bmBurgerButton: {
-    position: 'relative',
-    width: '27px',
-    height: '23px',
-    left: '-30px',
-    top: '20px',
-    float: 'right'
-  },
-  bmBurgerBars: {
-    background: '#fe0000'
-  },
-  bmBurgerBarsHover: {
-    background: '#a90000'
-  },
-  bmCrossButton: {
-    height: '24px',
-    width: '24px'
-  },
-  bmCross: {
-    background: '#fe0000'
-  },
-  bmMenuWrap: {
-    position: 'fixed',
-    height: '100%',
-    width: '250px'
-  },
-  bmMenu: {
-    background: '#373a47',
-    padding: '2.5em 1.5em 0',
-    fontSize: '1.15em'
-  },
-  bmMorphShape: {
-    fill: '#373a47'
-  },
-  bmItemList: {
-    color: '#b8b7ad',
-    padding: '0.8em'
-  },
-  bmItem: {
-    display: 'block',
-    color: '#b8b7ad'
-  },
-  bmOverlay: {
-    background: 'rgba(0, 0, 0, 0.3)'
-  },
-}
 
 
 interface INavMenuProps {
@@ -57,15 +11,15 @@ interface INavMenuProps {
 }
 
 const NavMenu: React.FC<INavMenuProps> = (props: INavMenuProps) => {
-
+  let className = props.isBig ? styles.logo : `${styles.logo} ${styles.shrink}`;
   return (
     <div>
       <StickyHeader isBig={props.isBig}>
         <div className={styles.logoContainer}>
-          <img src='../../assets/final-logo.png' alt='Logo' className={styles.logo}></img>
+          <img src='../../assets/final-logo.png' alt='Logo' className={className}></img>
         </div>
         <div className={styles.menuContainer}>
-          <Menu right styles={menustyles}>
+          <Menu right >
             <a id="home" href="/">Home</a>
             <a id="about" href="/about">About</a>
             <a id="contact" href="/contact">Contact</a>

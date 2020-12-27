@@ -12,7 +12,7 @@ const Content: React.FC<IContentProps> = (props: IContentProps) => {
     const ref = useRef<HTMLDivElement>(null);
     const handleScroll = () => {
         if (ref && ref.current) {
-            props.onScroll(ref.current.getBoundingClientRect().top === 0);
+            props.onScroll(ref.current.getBoundingClientRect().top >= -100);
         }
     };
     useEffect(() => {
